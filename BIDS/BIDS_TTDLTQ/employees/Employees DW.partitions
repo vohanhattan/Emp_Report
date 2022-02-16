@@ -1,0 +1,105 @@
+﻿<Cube xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="5555d75e-810a-4137-a108-b298c69d0b3b" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Employees DW</ID>
+  <MeasureGroups>
+    <MeasureGroup>
+      <ID>Fact Age</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="055a8d8c-8daf-48dc-99ab-59258f2c8d89">
+          <ID>Fact Age</ID>
+          <Name>Fact Age</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="760ace11-f729-4d14-b0f8-56feb2a1e190">
+            <DataSourceViewID>Employees DW</DataSourceViewID>
+            <TableID>dbo_FactAge</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+    <MeasureGroup>
+      <ID>Fact Current</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="ae61f5a2-8eb6-4b44-8003-46a1b1298861">
+          <ID>Fact Current</ID>
+          <Name>Fact Current</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="a65f0bc1-b269-49cb-9be5-aba92c00ba53">
+            <DataSourceViewID>Employees DW</DataSourceViewID>
+            <TableID>dbo_FactCurrent</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+    <MeasureGroup>
+      <ID>Fact Dept Position</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="581738c9-a5f8-4c81-a57b-dde8617149a2">
+          <ID>Fact Dept Position</ID>
+          <Name>Fact Dept Position</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="43d4a44a-e794-48d3-90f8-b337ba2884d3">
+            <DataSourceViewID>Employees DW</DataSourceViewID>
+            <TableID>dbo_FactDeptPosition</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+    <MeasureGroup>
+      <ID>Fact Headcount</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="adccfc1e-c54e-41c1-8a6d-6c73bb2bdad9">
+          <ID>Fact Headcount</ID>
+          <Name>Fact Headcount</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="12724846-25a8-429b-b9ad-c50f1a2c7620">
+            <DataSourceViewID>Employees DW</DataSourceViewID>
+            <TableID>dbo_FactHeadcount</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+    <MeasureGroup>
+      <ID>Fact Performance</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="15a3fbcc-c9ac-4c4c-a37f-0cbc33a63baa">
+          <ID>Fact Performance</ID>
+          <Name>Fact Performance</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="a0ebfcf9-fde2-429f-a533-8e41deb9e49d">
+            <DataSourceViewID>Employees DW</DataSourceViewID>
+            <TableID>dbo_FactPerformance</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+  </MeasureGroups>
+</Cube>

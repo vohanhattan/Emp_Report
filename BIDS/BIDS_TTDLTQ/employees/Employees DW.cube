@@ -1,0 +1,1250 @@
+﻿<Cube xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="5bdbd152-609c-4b9d-b2a9-3445d04bc207" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Employees DW</ID>
+  <Name>Employees DW</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+      <Value>
+        <dds xmlns="">
+          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="34" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-4667" scrolltop="-2799" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="75" x="24130" y="15854" backcolor="2434342" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="1" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+            <font>
+              <ddsxmlobjectstreamwrapper binary="010000009001b0300100065461686f6d61" />
+            </font>
+            <mouseicon>
+              <ddsxmlobjectstreamwrapper binary="6c74000000000000" />
+            </mouseicon>
+          </diagram>
+          <layoutmanager>
+            <ddsxmlobj />
+          </layoutmanager>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="FactAge" left="20" top="0" logicalid="17" controlid="1" masterid="0" hint1="0" hint2="0" width="3000" height="4466" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000e0000b80b000072110000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_FactAge" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="FactDeptPosition" left="12006" top="15332" logicalid="18" controlid="2" masterid="0" hint1="0" hint2="0" width="3577" height="4466" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000e0000f90d000072110000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_FactDeptPosition" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="DimEmployee" left="-968" top="9745" logicalid="19" controlid="3" masterid="0" hint1="0" hint2="0" width="3725" height="5000" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000e00008d0e000088130000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_DimEmployee" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="FactCurrent" left="9344" top="27985" logicalid="20" controlid="4" masterid="0" hint1="0" hint2="0" width="3112" height="4466" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000e0000280c000072110000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_FactCurrent" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="DimManager" left="11932" top="8466" logicalid="21" controlid="5" masterid="0" hint1="0" hint2="0" width="3725" height="4466" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000e00008d0e000072110000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_DimManager" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="FactPerformance" left="721" top="19487" logicalid="22" controlid="6" masterid="0" hint1="0" hint2="0" width="3000" height="4466" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000e0000b80b000072110000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_FactPerformance" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="DimDepartment" left="9038" top="22198" logicalid="23" controlid="7" masterid="0" hint1="0" hint2="0" width="3725" height="3387" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000e00008d0e00003b0d0000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_DimDepartment" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="FactHeadcount" left="6145" top="8466" logicalid="24" controlid="8" masterid="0" hint1="0" hint2="0" width="3387" height="4466" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000e00003b0d000072110000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_FactHeadcount" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline" left="13395" top="12433" logicalid="25" controlid="9" masterid="0" hint1="0" hint2="0" width="799" height="3199" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="15856113" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[FK_employees_FactDepartmentPositionSnapshot_ManagerKey]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="5" destid="2" sourceattachpoint="7" destattachpoint="6" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="13794" y="12932" />
+              <point x="13794" y="15332" />
+            </connector>
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline" left="11051" top="19498" logicalid="26" controlid="10" masterid="0" hint1="0" hint2="0" width="3043" height="3200" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="15856113" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[FK_employees_FactDepartmentPositionSnapshot_DepartmentKey]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="7" destid="2" sourceattachpoint="8" destattachpoint="7" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="11450" y="22198" />
+              <point x="11450" y="20998" />
+              <point x="13794" y="20998" />
+              <point x="13794" y="19798" />
+            </connector>
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline" left="2457" top="12396" logicalid="27" controlid="11" masterid="0" hint1="0" hint2="0" width="7187" height="18122" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="15856113" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[fk_FactPosition_DimEmployee]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="3" destid="4" sourceattachpoint="25" destattachpoint="16" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="2757" y="12795" />
+              <point x="6544" y="12795" />
+              <point x="6544" y="30218" />
+              <point x="9344" y="30218" />
+            </connector>
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline" left="2457" top="10399" logicalid="28" controlid="12" masterid="0" hint1="0" hint2="0" width="3988" height="1146" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="15856113" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[fk_FactHeadcount_FactOrder_DimEmployee]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="3" destid="8" sourceattachpoint="19" destattachpoint="16" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="2757" y="11145" />
+              <point x="4945" y="11145" />
+              <point x="4945" y="10699" />
+              <point x="6145" y="10699" />
+            </connector>
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline" left="495" top="14246" logicalid="29" controlid="13" masterid="0" hint1="0" hint2="0" width="926" height="5541" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="15856113" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[fk_FactPerformance_DimEmployee]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="3" destid="6" sourceattachpoint="7" destattachpoint="0" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="894" y="14745" />
+              <point x="894" y="17116" />
+              <point x="1121" y="17116" />
+              <point x="1121" y="19487" />
+            </connector>
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline" left="10501" top="25086" logicalid="30" controlid="14" masterid="0" hint1="0" hint2="0" width="799" height="3199" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="15856113" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[fk_FactPosition_DimDepartment]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="7" destid="4" sourceattachpoint="7" destattachpoint="4" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="10900" y="25585" />
+              <point x="10900" y="27985" />
+            </connector>
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline" left="9232" top="10300" logicalid="31" controlid="15" masterid="0" hint1="0" hint2="0" width="3000" height="799" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="15856113" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[fk_FactHeadcount_FactOrder_CustomerKey]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="5" destid="8" sourceattachpoint="20" destattachpoint="17" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="11932" y="10699" />
+              <point x="9532" y="10699" />
+            </connector>
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline" left="7538" top="12632" logicalid="32" controlid="16" masterid="0" hint1="0" hint2="0" width="2662" height="10066" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="15856113" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[fk_FactHeadcount_DimDepartment]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="7" destid="8" sourceattachpoint="2" destattachpoint="5" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="9800" y="22198" />
+              <point x="9800" y="17565" />
+              <point x="7838" y="17565" />
+              <point x="7838" y="12932" />
+            </connector>
+          </ddscontrol>
+        </dds>
+      </Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>-4667</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>-2799</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>-968</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>75</Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+  <State>Unprocessed</State>
+  <Dimensions>
+    <Dimension dwd:design-time-name="d9804e5c-865b-495a-95ee-b5af256297cc">
+      <ID>Fact Age</ID>
+      <Name>Fact Age</Name>
+      <DimensionID>Fact Age</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="0681f38b-d406-4691-9830-e2081603e27f">
+          <AttributeID>Title No</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="29080610-fdee-4764-8a2a-9f646a8dd326">
+          <AttributeID>Title</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="acb8e76f-647d-4da4-9dea-5e333c1a9df7">
+          <AttributeID>Min</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="8aa95e71-ab0c-4ecb-86cd-afb0294ebadf">
+          <AttributeID>Max</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="f2b93e40-254f-4fd8-a3df-d89be40a50ff">
+          <AttributeID>Avg F</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="2c251447-a6bf-4a0c-839f-bef0087df2f3">
+          <AttributeID>Avg M</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="292aece3-b49e-47d6-8d96-1be13a6cd4cc">
+          <AttributeID>40 -</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="16e8dd9e-ece0-4957-af6c-aba58094ece5">
+          <AttributeID>40 - 45</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="d4df6f8c-5b07-4b52-bffc-14980bfb45b0">
+          <AttributeID>45 - 49</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="f39cd0b6-a728-4a7c-8b76-c10e55f61332">
+          <AttributeID>50</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="044d9470-2318-42a7-b89e-9164744eb808">
+      <ID>Fact Current</ID>
+      <Name>Fact Current</Name>
+      <DimensionID>Fact Current</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="c7cbd1d9-27e8-4143-b29d-74e079aafaa9">
+          <AttributeID>Employee Key</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="7ccc3b9d-9513-4fce-9831-0d912553ab80">
+          <AttributeID>Fact Current - Employee Key</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="37b38fb2-bf51-42e0-ba84-53c02d6c8f2e">
+          <AttributeID>Department Key</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="7281d78e-13ca-4412-81e2-6b2493429b7c">
+          <AttributeID>Emp No</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="a2a5f1cf-d774-48cb-b9d2-e7a6cf9fa74d">
+          <AttributeID>Dept No</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="79e29c75-1eb0-495e-acc0-e96401dfc8a8">
+          <AttributeID>Birth Date</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="61dddd0b-a47e-4a27-a3ac-d7fb2fcb0989">
+          <AttributeID>Emp Name</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="bb4cf01c-f1a7-40db-b1f4-73dd8178a761">
+          <AttributeID>Gender</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="3379c059-6dd4-4bc5-b444-b02e01501f87">
+          <AttributeID>Hire Date</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="92d3d0a1-3aa7-4c4d-af8f-11e490591571">
+          <AttributeID>Title</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="8aad57c3-2dcb-4c48-bcc1-583eb024077e">
+          <AttributeID>Dept Name</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="f7e1c83b-bae9-4703-b846-54611d470729">
+      <ID>Dim Employee</ID>
+      <Name>Dim Employee</Name>
+      <DimensionID>Dim Employee</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="7c3add9e-9124-4361-8802-f933f281084e">
+          <AttributeID>Employee Key</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="b62a9a89-d11f-47de-b622-19cb9afc659a">
+          <AttributeID>Emp No</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="f368243b-8c5a-4bb6-a3e1-ef7fa79a763c">
+          <AttributeID>Birth Date</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="c42665b0-3dba-487d-a851-7e102cf45057">
+          <AttributeID>Emp Name</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="cbc8bb92-8c00-4f56-9c6d-a2f6f5c640c8">
+          <AttributeID>Gender</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="68ab5f21-e94b-4af0-a176-d57a99a93493">
+          <AttributeID>Hire Date</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="bfe32c53-f19b-41b3-a262-b2391e64e0ad">
+          <AttributeID>Salary</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="a000b5a0-c353-47ce-82be-f5b93204c341">
+          <AttributeID>Title</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="f4ecb519-4f49-4bfd-a599-b2eeb7e4477f">
+          <AttributeID>Row Is Current</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="3767ea32-a792-4a15-98f4-afa342e3f9a3">
+          <AttributeID>Row Start Date</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="ed44b316-3792-4fa4-bfb3-8f540acce8a7">
+          <AttributeID>Row End Date</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="55811455-753c-46c6-8b02-9fefad31b9d1">
+          <AttributeID>Row Change Reason</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="983a7eb8-dd59-452e-85e3-2cd7be06e21f">
+      <ID>Dim Department</ID>
+      <Name>Dim Department</Name>
+      <DimensionID>Dim Department</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="5574c664-54b0-434b-b5e3-c85689fe0736">
+          <AttributeID>Department Key</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="993afc91-af86-4d69-bd26-f1ab61b8d6f3">
+          <AttributeID>Dept No</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="be91a0cb-ac04-45d2-b553-8e2ec88e634f">
+          <AttributeID>Dept Name</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="4da08764-52e7-4c89-a1c1-5034657bacac">
+          <AttributeID>Row Is Current</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="bb116b71-e315-4676-be60-6deffc3deca7">
+          <AttributeID>Row Start Date</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="021e3dd2-90af-4a72-9476-21c4db55181f">
+          <AttributeID>Row End Date</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="3e17b8c7-f65e-4bf1-9d47-9907f608dd81">
+          <AttributeID>Row Change Reason</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="a9ecd0cf-eef0-4674-843c-e56804198c6c">
+      <ID>Fact Dept Position</ID>
+      <Name>Fact Dept Position</Name>
+      <DimensionID>Fact Dept Position</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="42dd6968-112e-4a51-8348-44fc57783748">
+          <AttributeID>Department Key</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="5d6fa1df-1c16-45c9-a1f3-e85790736bf8">
+          <AttributeID>Manager Key</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="00fdfa4e-11ea-4566-8dc9-542b49494f7b">
+          <AttributeID>Dept No</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="6b0f6d38-db95-4d71-a52b-eaf1e41a8575">
+          <AttributeID>Dept Name</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="85f98d0a-b956-44c4-960d-13d9b14c7bcc">
+          <AttributeID>Manager Key 1</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="5ce541aa-bebf-43e4-93cf-ef18b78da73b">
+          <AttributeID>Staff</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="12fd9c2f-e46c-43f1-8b7e-b0f5fe125018">
+          <AttributeID>Senior Staff</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="0b6c3e5e-5e3f-4c4d-a7cd-ffb188debb9d">
+          <AttributeID>Engineer</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="11a31a68-740c-43c4-817b-ec0d0ab77e16">
+          <AttributeID>Senior Engineer</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="4283cf74-2e8a-44a3-ab16-ba71f756aac2">
+          <AttributeID>Assistant Engineer</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="e6a1e447-1977-4af7-8c57-004edff7afdf">
+          <AttributeID>Technique Leader</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="6bf03f8a-efeb-432a-85b9-ade4d9400757">
+      <ID>Dim Manager</ID>
+      <Name>Dim Manager</Name>
+      <DimensionID>Dim Manager</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="99951b43-a945-418f-a387-641cd452d297">
+          <AttributeID>Manager Key</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="45f79b2c-1a93-47e2-a910-9b9cb624ff0b">
+          <AttributeID>Manager No</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="f5ab9068-57c4-456b-8c3e-fed341b6cd07">
+          <AttributeID>Manager Name</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="a679c6ea-4077-4934-a48a-8165e56f86c3">
+          <AttributeID>Dept No</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="41489508-fdea-4154-9f15-e49a15af2306">
+          <AttributeID>From Date</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="3088b20f-254b-4a08-935d-5f29fe4614e1">
+          <AttributeID>Salary</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="1a41ea55-81f1-429b-ba48-75512b96550d">
+          <AttributeID>Row Is Current</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="59f4cb2d-a98d-4255-87ea-bd48aafd34ca">
+          <AttributeID>Row Start Date</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="36a698b3-decf-45f0-a67e-072b7cde3626">
+          <AttributeID>Row End Date</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="dd566506-2726-4126-b586-9c78dda4f8c4">
+          <AttributeID>Row Change Reason</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="5af4106e-2fe6-4809-94bb-d8b28dc57eb0">
+      <ID>Fact Headcount</ID>
+      <Name>Fact Headcount</Name>
+      <DimensionID>Fact Headcount</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="90027390-b87a-4df5-ae7e-45ec16226a14">
+          <AttributeID>Department Key</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="64bfb092-8640-4198-ab1f-072b6abe2b31">
+          <AttributeID>Manager Key</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="4f2e8b95-3c5b-442e-98b7-64fa374747bf">
+          <AttributeID>Employee Key</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="bb8f0816-8742-4205-9463-c388750caff7">
+          <AttributeID>Fact Headcount - Department Key</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="ccad6a84-7843-4f21-a559-cd6ec88cc8db">
+          <AttributeID>Emp No</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="5462c174-6c9d-406a-bfcf-40346c52d641">
+          <AttributeID>Dept No</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="269c40c1-aeab-4891-8288-4fdb18dcfb79">
+          <AttributeID>Manager Key 1</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="15e2d6d5-856e-464f-a405-add477dfeb90">
+          <AttributeID>Dept Name</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="3bfda75c-91b0-44f3-8350-d7ff21cc55e3">
+          <AttributeID>Manager Name</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="4c8b58c6-21d2-46fb-a808-306806a5a827">
+          <AttributeID>From Date</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="6ad612ee-5d79-4e04-8b74-7fcddbf4bd48">
+          <AttributeID>Total Employees</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="68fcec52-8a8f-4354-9860-90c6f3dd4329">
+          <AttributeID>Avg Salaries</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="ef35c1a5-0db3-4604-bce4-35ba942c9beb">
+      <ID>Fact Performance</ID>
+      <Name>Fact Performance</Name>
+      <DimensionID>Fact Performance</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="94fab7c7-b7b9-4fdd-9318-6da2a0ce8e99">
+          <AttributeID>Employee Key</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="c319d771-b61a-4d19-8a7d-d41d1c0a9852">
+          <AttributeID>Emp No</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="12bc6b9e-9deb-4630-bbc1-18589c7cd07c">
+          <AttributeID>Birth Date</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="70cca2b6-ec74-48d4-a314-feedb319ee3b">
+          <AttributeID>Emp Name</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="676de1bb-0fab-4508-88c8-c249b1a866c7">
+          <AttributeID>Gender</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="787e7d0b-703d-4576-a622-d3bbad98c9a2">
+          <AttributeID>Age</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="fc0bdb78-38f5-4761-85c8-bcc91be65204">
+          <AttributeID>Work Year</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="845447f1-64ce-48c8-9a5f-d4feeefc31f2">
+          <AttributeID>Promote</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="eff85327-3fc5-4fa0-90f1-78b4b6bc262c">
+          <AttributeID>Title</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="1cbef077-fa77-4314-ada3-9498557df05a">
+          <AttributeID>Rankby Year</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+  </Dimensions>
+  <MeasureGroups>
+    <MeasureGroup dwd:design-time-name="2cb84b34-754a-47e7-a575-bd4c7450a3e3">
+      <ID>Fact Age</ID>
+      <Name>Fact Age</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+      <State>Unprocessed</State>
+      <Measures>
+        <Measure dwd:design-time-name="6142a254-3f84-4e03-9ce8-f24b2a42e570">
+          <ID>Min</ID>
+          <Name>Min</Name>
+          <Source dwd:design-time-name="e66a0544-e45d-40e2-b9b8-79be0ed59891">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="db004291-fa07-4f0f-bd18-1b6239aad8ac">
+              <TableID>dbo_FactAge</TableID>
+              <ColumnID>Min</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="9ca9f8bd-6fa8-432a-903a-24a09e66b0dc">
+          <ID>Max</ID>
+          <Name>Max</Name>
+          <Source dwd:design-time-name="34a8f763-8777-4d90-be53-7c4fff067ae9">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="b67cec0b-544f-441d-8e57-a56f5eda073e">
+              <TableID>dbo_FactAge</TableID>
+              <ColumnID>Max</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="f84e9ba0-d1be-4a10-8b5c-41d8c6af2408">
+          <ID>Avg F</ID>
+          <Name>Avg F</Name>
+          <Source dwd:design-time-name="335ef8f8-89e4-4b72-8239-68ae8e47adaa">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="a5b72ea4-7933-48fa-999c-bfcad7e8ee40">
+              <TableID>dbo_FactAge</TableID>
+              <ColumnID>AvgF</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="faabeac8-74bb-4ada-8201-c3ad72cc471a">
+          <ID>Avg M</ID>
+          <Name>Avg M</Name>
+          <Source dwd:design-time-name="6b779647-dc4d-471d-aa10-3d0774ce1dc4">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="775e92a4-9864-4ac4-9966-0d8cef8d0d9a">
+              <TableID>dbo_FactAge</TableID>
+              <ColumnID>AvgM</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="993f8469-13cf-49ab-bf22-b2d66e43082b">
+          <ID>40 -</ID>
+          <Name>40 -</Name>
+          <Source dwd:design-time-name="71b8b894-5045-437b-b965-c457097500c4">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="6017102b-3c5d-496f-9c32-69a941dad261">
+              <TableID>dbo_FactAge</TableID>
+              <ColumnID>_x0034_0_x0020_-</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="f76ec741-be5d-42cb-a645-13ddd8746571">
+          <ID>40 - 45</ID>
+          <Name>40 - 45</Name>
+          <Source dwd:design-time-name="d5830384-4531-4806-885f-34727c6cb754">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="4c3b5ef2-2143-4872-955f-8f97e2633d71">
+              <TableID>dbo_FactAge</TableID>
+              <ColumnID>_x0034_0_x0020_-_x0020_45</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="d8fed055-4066-49d9-b7b6-de3fcd97c297">
+          <ID>45 - 49</ID>
+          <Name>45 - 49</Name>
+          <Source dwd:design-time-name="ef225884-01c2-4477-aa26-5479437e9757">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="5ac7b4aa-ef7e-40ce-94f8-b9c994584e4e">
+              <TableID>dbo_FactAge</TableID>
+              <ColumnID>_x0034_5_x0020_-_x0020_49</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="c87fbeea-8090-4884-857c-7b851d5b6f11">
+          <ID>50</ID>
+          <Name>50</Name>
+          <Source dwd:design-time-name="a35a3029-f631-4fbb-95fc-dbeea38c50f2">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="0b2f7a9e-bda0-447a-a452-1ab68dd84b4e">
+              <TableID>dbo_FactAge</TableID>
+              <ColumnID>_x0035_0_x0020__x002B_</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="06983cb5-ba7f-486e-8e08-7af3738ecd68">
+          <ID>Fact Age Count</ID>
+          <Name>Fact Age Count</Name>
+          <AggregateFunction>Count</AggregateFunction>
+          <Source dwd:design-time-name="67a1a8a0-bf6d-488b-8446-3dfd8f9cefe1">
+            <DataType>Integer</DataType>
+            <DataSize>4</DataSize>
+            <Source xsi:type="RowBinding" dwd:design-time-name="f9b7920f-51fa-467f-be27-9e74f0304f43">
+              <TableID>dbo_FactAge</TableID>
+            </Source>
+          </Source>
+        </Measure>
+      </Measures>
+      <StorageMode>Molap</StorageMode>
+      <ProcessingMode>Regular</ProcessingMode>
+      <Dimensions>
+        <Dimension xsi:type="DegenerateMeasureGroupDimension" dwd:design-time-name="5f377c91-17e3-4e1e-aaaa-f11753cb138f">
+          <CubeDimensionID>Fact Age</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="13eacf13-dbd9-43ad-a44f-f0173d0cd832">
+              <AttributeID>Title No</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="ffc3f222-7ec6-4054-917b-edc0de6c1773">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="2a399294-08c4-4680-a072-443ca67753c4">
+                    <TableID>dbo_FactAge</TableID>
+                    <ColumnID>title_no</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+      </Dimensions>
+      <Partitions />
+    </MeasureGroup>
+    <MeasureGroup dwd:design-time-name="700275ec-00fc-43ba-a7b8-54754502be77">
+      <ID>Fact Current</ID>
+      <Name>Fact Current</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+      <State>Unprocessed</State>
+      <Measures>
+        <Measure dwd:design-time-name="1b67aa4c-9454-4bc3-864c-3af52562e1a2">
+          <ID>Emp No</ID>
+          <Name>Emp No</Name>
+          <Source dwd:design-time-name="9bf6db6f-4a20-41f4-b825-98e641611fa7">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="772ab695-291a-4da3-b9ff-8112459b722a">
+              <TableID>dbo_FactCurrent</TableID>
+              <ColumnID>emp_no</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="587b980b-bef9-4f7b-a0d8-c6964df7f655">
+          <ID>Fact Current Count</ID>
+          <Name>Fact Current Count</Name>
+          <AggregateFunction>Count</AggregateFunction>
+          <Source dwd:design-time-name="9636a962-afa7-4b04-a486-2aed5241cc2c">
+            <DataType>Integer</DataType>
+            <DataSize>4</DataSize>
+            <Source xsi:type="RowBinding" dwd:design-time-name="7a7adef3-21c6-490f-b532-327901dd8c7f">
+              <TableID>dbo_FactCurrent</TableID>
+            </Source>
+          </Source>
+        </Measure>
+      </Measures>
+      <StorageMode>Molap</StorageMode>
+      <ProcessingMode>Regular</ProcessingMode>
+      <Dimensions>
+        <Dimension xsi:type="DegenerateMeasureGroupDimension" dwd:design-time-name="a2df42e6-ef20-4ba9-bda5-624cfe27c31c">
+          <CubeDimensionID>Fact Current</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="8aa672c3-e8e6-4366-84c4-440dce820f98">
+              <AttributeID>Employee Key</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="354f4e13-0378-4714-bad8-3727b735f43a">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="a194930f-edcc-48d2-82d0-49a85c68201d">
+                    <TableID>dbo_FactCurrent</TableID>
+                    <ColumnID>employeeKey</ColumnID>
+                  </Source>
+                </KeyColumn>
+                <KeyColumn dwd:design-time-name="ae9f7d79-a7ff-4aa1-9e6d-c63ae0e41abe">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="cd668c17-cf8a-45c3-97a6-992816dfc506">
+                    <TableID>dbo_FactCurrent</TableID>
+                    <ColumnID>departmentKey</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="280a8bfa-1163-4bbb-9fe6-78b862310c75">
+          <CubeDimensionID>Dim Employee</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="4a7678c2-f33a-43f6-b82b-3d373fc8026d">
+              <AttributeID>Employee Key</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="ac3e8f9a-bf66-4f85-af4a-2fb6c2329712">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="59b68ace-6d84-4af7-af4b-920f4517bc65">
+                    <TableID>dbo_FactCurrent</TableID>
+                    <ColumnID>employeeKey</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="12b87ae8-4b6c-4417-a721-08ffc11246a6">
+          <CubeDimensionID>Dim Department</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="881a4351-137a-4ca2-b88d-27e7fa959361">
+              <AttributeID>Department Key</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="72b371c1-f0f3-47a9-ae05-cceb9fed6cb2">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="2322a2b5-e768-4184-9292-6a0ab06d651e">
+                    <TableID>dbo_FactCurrent</TableID>
+                    <ColumnID>departmentKey</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+      </Dimensions>
+      <Partitions />
+    </MeasureGroup>
+    <MeasureGroup dwd:design-time-name="82bff91a-db41-4112-961b-5543f58256a4">
+      <ID>Fact Dept Position</ID>
+      <Name>Fact Dept Position</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+      <State>Unprocessed</State>
+      <Measures>
+        <Measure dwd:design-time-name="0dff8b01-2824-4e2f-b82b-56fbd97ed81f">
+          <ID>Staff</ID>
+          <Name>Staff</Name>
+          <Source dwd:design-time-name="de8e3455-1542-4f34-9758-2ec2611fb674">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="11f5b250-f12a-4d1c-90c6-b79dee7dea37">
+              <TableID>dbo_FactDeptPosition</TableID>
+              <ColumnID>Staff</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="02f76ff2-6264-4a07-a8a0-b2e6aaa4cb1f">
+          <ID>Senior Staff</ID>
+          <Name>Senior Staff</Name>
+          <Source dwd:design-time-name="e2350beb-7d65-495b-9ba7-9240be4048f2">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="25038408-1de5-405a-b3ed-aba4c0ce0ae8">
+              <TableID>dbo_FactDeptPosition</TableID>
+              <ColumnID>Senior_x0020_Staff</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="f221a98a-c2cb-4a34-9c8f-981ce14e739e">
+          <ID>Engineer</ID>
+          <Name>Engineer</Name>
+          <Source dwd:design-time-name="1b187688-61ad-4e02-a131-698e52c2fe79">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="6145229a-ed38-4e91-a74b-8aa578c7ce19">
+              <TableID>dbo_FactDeptPosition</TableID>
+              <ColumnID>Engineer</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="871ee5d2-be92-40e0-a67e-87d9beaa670f">
+          <ID>Senior Engineer</ID>
+          <Name>Senior Engineer</Name>
+          <Source dwd:design-time-name="b2bdd747-d025-42f4-8a5d-915ebff53269">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="43136da6-a304-40c6-9965-3b0cb5482aab">
+              <TableID>dbo_FactDeptPosition</TableID>
+              <ColumnID>Senior_x0020_Engineer</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="98f554e2-bc16-464b-8940-06b7e2a5547c">
+          <ID>Assistant Engineer</ID>
+          <Name>Assistant Engineer</Name>
+          <Source dwd:design-time-name="81ccae17-919e-4714-b0a7-d67c59092929">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="73ab78d6-0167-4a3e-90e1-ca611d0ea331">
+              <TableID>dbo_FactDeptPosition</TableID>
+              <ColumnID>Assistant_x0020_Engineer</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="7b33d9b3-e02c-48b9-aa86-ee34a31f8a99">
+          <ID>Technique Leader</ID>
+          <Name>Technique Leader</Name>
+          <Source dwd:design-time-name="b66a9066-5b1b-4bad-8c64-8f8ffd716311">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="1c161801-de03-45ce-8001-cce0b9862d4d">
+              <TableID>dbo_FactDeptPosition</TableID>
+              <ColumnID>Technique_x0020_Leader</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="1e39b0f5-e38e-4e60-9b19-175eeb41d283">
+          <ID>Fact Dept Position Count</ID>
+          <Name>Fact Dept Position Count</Name>
+          <AggregateFunction>Count</AggregateFunction>
+          <Source dwd:design-time-name="9a50f25f-a319-44d4-bc85-2cb205fe488c">
+            <DataType>Integer</DataType>
+            <DataSize>4</DataSize>
+            <Source xsi:type="RowBinding" dwd:design-time-name="54d67e8b-061b-44db-b47b-057debdc8db3">
+              <TableID>dbo_FactDeptPosition</TableID>
+            </Source>
+          </Source>
+        </Measure>
+      </Measures>
+      <StorageMode>Molap</StorageMode>
+      <ProcessingMode>Regular</ProcessingMode>
+      <Dimensions>
+        <Dimension xsi:type="DegenerateMeasureGroupDimension" dwd:design-time-name="5affc526-892a-4811-9aac-07eab1039995">
+          <CubeDimensionID>Fact Dept Position</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="3253fa55-bfeb-4266-a5d2-f3e2b5865232">
+              <AttributeID>Department Key</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="459b52a5-748f-443c-ac1f-21ab59fc7118">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="1dd4d30a-d5e2-475d-b529-b7528e92dcfd">
+                    <TableID>dbo_FactDeptPosition</TableID>
+                    <ColumnID>departmentKey</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="ab144913-ff95-4d16-9316-9012506ffff3">
+          <CubeDimensionID>Dim Manager</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="686efc18-bc1f-4764-859e-fd61eea58652">
+              <AttributeID>Manager Key</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="cdec94ed-bbbe-4f63-b432-6205286bca09">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="18b7eebf-0247-4e63-b7ad-d4c6e1189a83">
+                    <TableID>dbo_FactDeptPosition</TableID>
+                    <ColumnID>managerKey</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="df170ac8-5305-401b-b56c-50fdde813f10">
+          <CubeDimensionID>Dim Department</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="1cc3b60e-b435-4f94-8f17-fd11b1469c55">
+              <AttributeID>Department Key</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="e1d0390e-dce4-438f-9ac9-b9bda5b7fcfa">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="aba7cded-ace3-487c-8777-2a92f4127632">
+                    <TableID>dbo_FactDeptPosition</TableID>
+                    <ColumnID>departmentKey</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+      </Dimensions>
+      <Partitions />
+    </MeasureGroup>
+    <MeasureGroup dwd:design-time-name="b8aa3593-99fa-4f48-a5e7-b8182272203e">
+      <ID>Fact Headcount</ID>
+      <Name>Fact Headcount</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+      <State>Unprocessed</State>
+      <Measures>
+        <Measure dwd:design-time-name="0f36485a-d912-4eb5-8201-6253f14d3960">
+          <ID>Emp No - Fact Headcount</ID>
+          <Name>Emp No - Fact Headcount</Name>
+          <Source dwd:design-time-name="57ff1185-d69f-4894-bac4-ae39cf584be3">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="b1debb82-dfd6-4eed-a2f2-4a6e12229e06">
+              <TableID>dbo_FactHeadcount</TableID>
+              <ColumnID>emp_no</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="ac20be40-7f1f-4b40-bf55-fbbc4ab2a537">
+          <ID>Total Employees</ID>
+          <Name>Total Employees</Name>
+          <Source dwd:design-time-name="bbec2870-c537-4f87-bd2e-36e360ece105">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="7c57f820-9ccc-4d53-b2bd-ff6ede31442e">
+              <TableID>dbo_FactHeadcount</TableID>
+              <ColumnID>Total_Employees</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="073c7aa1-0ca8-4ba7-b16e-932fb4a860c0">
+          <ID>Avg Salaries</ID>
+          <Name>Avg Salaries</Name>
+          <Source dwd:design-time-name="467aa135-7236-45eb-a6d7-867d0930a4d9">
+            <DataType>BigInt</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="893d7150-fb4e-4f84-83fa-d5f3557271b5">
+              <TableID>dbo_FactHeadcount</TableID>
+              <ColumnID>Avg_Salaries</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="d32bfa0c-d50e-44b5-aa3c-3ec1af5028b8">
+          <ID>Fact Headcount Count</ID>
+          <Name>Fact Headcount Count</Name>
+          <AggregateFunction>Count</AggregateFunction>
+          <Source dwd:design-time-name="6ec29794-2f0a-4f35-bfce-c6b1d00a68e0">
+            <DataType>Integer</DataType>
+            <DataSize>4</DataSize>
+            <Source xsi:type="RowBinding" dwd:design-time-name="6548fc1d-29fd-478d-bdb9-27aae72a924a">
+              <TableID>dbo_FactHeadcount</TableID>
+            </Source>
+          </Source>
+        </Measure>
+      </Measures>
+      <StorageMode>Molap</StorageMode>
+      <ProcessingMode>Regular</ProcessingMode>
+      <Dimensions>
+        <Dimension xsi:type="DegenerateMeasureGroupDimension" dwd:design-time-name="877d4960-77d2-4c3f-8ef6-047b866fa95a">
+          <CubeDimensionID>Fact Headcount</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="82beda8e-39ad-4432-bcc0-42b07babe9e2">
+              <AttributeID>Department Key</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="f18764a3-f763-4570-ac1a-dc358a345c06">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="d144015e-045a-46b4-8a2a-24429219266e">
+                    <TableID>dbo_FactHeadcount</TableID>
+                    <ColumnID>departmentKey</ColumnID>
+                  </Source>
+                </KeyColumn>
+                <KeyColumn dwd:design-time-name="94d44782-b0f9-4e6a-8a30-d93cd718eab9">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="6f2071c4-99de-46cb-807c-059280c2b6ad">
+                    <TableID>dbo_FactHeadcount</TableID>
+                    <ColumnID>employeeKey</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="839f1886-3df5-49a5-b70c-33f13f592899">
+          <CubeDimensionID>Dim Manager</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="d3d6ba04-7d5c-4989-8867-cb8e5b3b54d3">
+              <AttributeID>Manager Key</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="f6bb6c0e-7baf-499a-9120-6f173f4e5ffd">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="71d28265-d427-4626-99b3-929651cf4fa7">
+                    <TableID>dbo_FactHeadcount</TableID>
+                    <ColumnID>managerKey</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="c2ff377d-ac4b-44b0-839c-d9b35f2efe2a">
+          <CubeDimensionID>Dim Employee</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="f7bc4c30-fdb0-4c15-b7b4-9250d9d83f39">
+              <AttributeID>Employee Key</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="357ff410-9a6a-4202-9f69-d223604f46b6">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="30640a29-8cef-48f8-84ec-530c959db689">
+                    <TableID>dbo_FactHeadcount</TableID>
+                    <ColumnID>employeeKey</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="2c8bc240-f2c7-46bf-aa47-a37ced125997">
+          <CubeDimensionID>Dim Department</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="22110168-d744-4e9c-9076-8258397796ce">
+              <AttributeID>Department Key</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="98c56d3d-a713-4577-8363-9c4a13c95590">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="ea3f9858-82dd-4a0c-96a8-ccbc92ddcd2d">
+                    <TableID>dbo_FactHeadcount</TableID>
+                    <ColumnID>departmentKey</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+      </Dimensions>
+      <Partitions />
+    </MeasureGroup>
+    <MeasureGroup dwd:design-time-name="6f5e82fc-2ad8-439e-b697-c8c330d4df27">
+      <ID>Fact Performance</ID>
+      <Name>Fact Performance</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+      <State>Unprocessed</State>
+      <Measures>
+        <Measure dwd:design-time-name="837f9b88-3ff5-43a1-869f-18f61444bae2">
+          <ID>Emp No - Fact Performance</ID>
+          <Name>Emp No - Fact Performance</Name>
+          <Source dwd:design-time-name="4a5c7f97-a8e3-43c1-8b71-d7e276a38b30">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="f2bc9ea0-6c40-4c14-94f0-b4355db86947">
+              <TableID>dbo_FactPerformance</TableID>
+              <ColumnID>emp_no</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="12dabb7e-77a4-404d-b6e1-fd71ae453175">
+          <ID>Age</ID>
+          <Name>Age</Name>
+          <Source dwd:design-time-name="9c13e157-cbb7-42f7-a417-47e1289d9c4e">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="accaa204-056b-4844-80d6-145ba62a1998">
+              <TableID>dbo_FactPerformance</TableID>
+              <ColumnID>Age</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="8b9bd037-1082-46e0-b11e-f3ba6fa59bab">
+          <ID>Work Year</ID>
+          <Name>Work Year</Name>
+          <Source dwd:design-time-name="1292ce52-cc36-4c12-a8d6-dae4c4051da0">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="c9a6a197-3b1d-40e6-a6eb-0d2e41e6b933">
+              <TableID>dbo_FactPerformance</TableID>
+              <ColumnID>WorkYear</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="efbd6257-6ab0-4f5f-9ff6-dab4ec65bbb3">
+          <ID>Promote</ID>
+          <Name>Promote</Name>
+          <Source dwd:design-time-name="6a48ebe8-1e4f-4aad-a25d-fa8a70956af9">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="5e2793eb-a430-4d9a-a95c-e9fd2e67b6f5">
+              <TableID>dbo_FactPerformance</TableID>
+              <ColumnID>Promote</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="3e320ad0-8b2f-4b02-8867-0631ab9636fb">
+          <ID>Rankby Year</ID>
+          <Name>Rankby Year</Name>
+          <Source dwd:design-time-name="08f30c1c-0d31-419b-a4eb-3501a91317b4">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="61451ceb-874a-4ff5-8a94-0e8d38120107">
+              <TableID>dbo_FactPerformance</TableID>
+              <ColumnID>RankbyYear</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="35b9bc5e-3398-4570-83d0-07411e19cab7">
+          <ID>Fact Performance Count</ID>
+          <Name>Fact Performance Count</Name>
+          <AggregateFunction>Count</AggregateFunction>
+          <Source dwd:design-time-name="1ab30c2e-cf5d-49bc-97a1-7f963901cb6e">
+            <DataType>Integer</DataType>
+            <DataSize>4</DataSize>
+            <Source xsi:type="RowBinding" dwd:design-time-name="8df3532e-b95e-41b2-ad65-6f6c1baa0b3d">
+              <TableID>dbo_FactPerformance</TableID>
+            </Source>
+          </Source>
+        </Measure>
+      </Measures>
+      <StorageMode>Molap</StorageMode>
+      <ProcessingMode>Regular</ProcessingMode>
+      <Dimensions>
+        <Dimension xsi:type="DegenerateMeasureGroupDimension" dwd:design-time-name="5edbbf81-0f70-41a0-abd1-0789e2e9b434">
+          <CubeDimensionID>Fact Performance</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="c1919655-c60d-419e-b49f-e61529be34ee">
+              <AttributeID>Employee Key</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="4fb333db-5c79-4a61-bde5-2122e628b6a1">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="5f9632d4-3e2d-4005-9e7b-587082f711d5">
+                    <TableID>dbo_FactPerformance</TableID>
+                    <ColumnID>employeeKey</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="373b2974-b15a-4072-ad3f-a3235565deb8">
+          <CubeDimensionID>Dim Employee</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="40450cd9-1b75-4448-9ac6-c62bfc57633f">
+              <AttributeID>Employee Key</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="99e1460e-c296-401e-a46d-a810ecd4b5c6">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="08c73fd9-8d27-4a72-a629-43cdf0ddb509">
+                    <TableID>dbo_FactPerformance</TableID>
+                    <ColumnID>employeeKey</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+      </Dimensions>
+      <Partitions />
+    </MeasureGroup>
+  </MeasureGroups>
+  <Source dwd:design-time-name="16b0b967-3dbe-4cb6-9b05-3eafb5bf1e90">
+    <DataSourceViewID>Employees DW</DataSourceViewID>
+  </Source>
+</Cube>

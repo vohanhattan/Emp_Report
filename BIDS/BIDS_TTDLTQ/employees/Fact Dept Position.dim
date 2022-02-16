@@ -1,0 +1,296 @@
+﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="5b810bbe-70ec-4ebf-ab80-9946d5297ead" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Fact Dept Position</ID>
+  <Name>Fact Dept Position</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+      <Value>
+        <dds xmlns="">
+          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="2" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-1653" scrolltop="-3090" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="6922" y="10647" backcolor="16777215" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+            <font>
+              <ddsxmlobjectstreamwrapper binary="010000009001b0300100065461686f6d61" />
+            </font>
+            <mouseicon>
+              <ddsxmlobjectstreamwrapper binary="6c74000000000000" />
+            </mouseicon>
+          </diagram>
+          <layoutmanager>
+            <ddsxmlobj />
+          </layoutmanager>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="FactDeptPosition" left="20" top="0" logicalid="1" controlid="1" masterid="0" hint1="0" hint2="0" width="3577" height="4466" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000e0000f90d000072110000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_FactDeptPosition" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+        </dds>
+      </Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>-1653</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>-3090</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>20</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>100</Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+  <State>Unprocessed</State>
+  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="7129799b-3a94-47cf-ad76-cea128def155">
+    <DataSourceViewID>Employees DW</DataSourceViewID>
+  </Source>
+  <ErrorConfiguration dwd:design-time-name="07398cb6-4490-4b5d-9cd2-b165c28433ee">
+    <KeyNotFound>ReportAndStop</KeyNotFound>
+    <KeyDuplicate>ReportAndStop</KeyDuplicate>
+    <NullKeyNotAllowed>ReportAndStop</NullKeyNotAllowed>
+  </ErrorConfiguration>
+  <CurrentStorageMode>Molap</CurrentStorageMode>
+  <Attributes>
+    <Attribute dwd:design-time-name="b07f9f72-8f43-4dd1-a528-242015a14008">
+      <ID>Department Key</ID>
+      <Name>Department Key</Name>
+      <Usage>Key</Usage>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="83f6118a-0086-49a6-9520-967750033793">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="79357024-9747-4e75-9ca3-6640d3f53da7">
+            <TableID>dbo_FactDeptPosition</TableID>
+            <ColumnID>departmentKey</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <AttributeRelationships>
+        <AttributeRelationship dwd:design-time-name="d5ad8aea-2ba5-4db0-9c13-03e71ed83103">
+          <AttributeID>Manager Key</AttributeID>
+          <Name>Manager Key</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="ec87cad9-3c73-4b0d-996c-08300b1d680a">
+          <AttributeID>Dept No</AttributeID>
+          <Name>Dept No</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="bb2eb9da-d38d-45e5-acc7-56760c965d59">
+          <AttributeID>Dept Name</AttributeID>
+          <Name>Dept Name</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="86e81548-65d1-404c-8d6e-e5fbd90a51d9">
+          <AttributeID>Manager Key 1</AttributeID>
+          <Name>Manager Key 1</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="f989168f-75c2-4ff3-ad6c-379d1783f024">
+          <AttributeID>Staff</AttributeID>
+          <Name>Staff</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="2cf3b03b-448d-4f8d-8180-37007e907f78">
+          <AttributeID>Senior Staff</AttributeID>
+          <Name>Senior Staff</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="1c4de104-00a8-4025-9d69-80935a1e590d">
+          <AttributeID>Engineer</AttributeID>
+          <Name>Engineer</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="70449c7d-1f9e-4b10-837c-567f3141a34e">
+          <AttributeID>Senior Engineer</AttributeID>
+          <Name>Senior Engineer</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="78afba42-0a60-4c92-b3cd-bff4ef2d4d0b">
+          <AttributeID>Assistant Engineer</AttributeID>
+          <Name>Assistant Engineer</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="c0f2e721-3c85-441d-8c26-c72666527212">
+          <AttributeID>Technique Leader</AttributeID>
+          <Name>Technique Leader</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="595fb69b-4a02-4651-bb3c-c7d1e80d6e34">
+      <ID>Manager Key</ID>
+      <Name>Manager Key</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="28331308-8311-43f3-8200-14f57c98d349">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="9ed72d95-5f4f-4cfd-a8c7-8e3258c784c4">
+            <TableID>dbo_FactDeptPosition</TableID>
+            <ColumnID>managerKey</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="4482bee0-5a04-44c7-9c2b-c96eec1240b3">
+      <ID>Dept No</ID>
+      <Name>Dept No</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="8b4f359c-d1a3-48c5-8840-403c35898bd8">
+          <DataType>WChar</DataType>
+          <DataSize>4</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="6f6c9323-6ec2-44d9-91ee-c3bf1f531329">
+            <TableID>dbo_FactDeptPosition</TableID>
+            <ColumnID>dept_no</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="4a4df840-850c-4499-85e7-c4651082d600">
+      <ID>Dept Name</ID>
+      <Name>Dept Name</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="7d9ab6cd-90cd-42c4-8de2-b6e6fb175c5d">
+          <DataType>WChar</DataType>
+          <DataSize>30</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="600bc399-23f8-48f4-8c69-a8a6b5d28923">
+            <TableID>dbo_FactDeptPosition</TableID>
+            <ColumnID>dept_name</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="2c67720a-f4aa-4e14-8e76-ddf7f888ebec">
+      <ID>Manager Key 1</ID>
+      <Name>Manager Key 1</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="f8bc22f9-853a-4a11-bff2-bb2077f46571">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="0aaed043-10ea-48bd-b020-e6cb19806cf7">
+            <TableID>dbo_FactDeptPosition</TableID>
+            <ColumnID>managerKey</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="c2bc31ea-94ce-4c8e-8eae-011817005016">
+      <ID>Staff</ID>
+      <Name>Staff</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="4662c8ff-d430-44cd-93e6-b959ec667afd">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="427c6daa-35b7-420f-9c79-94a4918121ba">
+            <TableID>dbo_FactDeptPosition</TableID>
+            <ColumnID>Staff</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="c2c90261-540b-4470-b70a-b278d06dad57">
+      <ID>Senior Staff</ID>
+      <Name>Senior Staff</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="6d446c7d-8c62-4528-b30b-ebdb83c3471d">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="411e151f-9326-4cbf-8242-f1197f12538a">
+            <TableID>dbo_FactDeptPosition</TableID>
+            <ColumnID>Senior_x0020_Staff</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="cb7f9fa4-77db-41f8-b6cd-6c0206973fcc">
+      <ID>Engineer</ID>
+      <Name>Engineer</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="f2b1c78c-f46e-4ba6-b74c-dc744f68b4b9">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="fc9c8ed0-2db9-441b-bbc4-a9d4c7507df3">
+            <TableID>dbo_FactDeptPosition</TableID>
+            <ColumnID>Engineer</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="13cdb178-0c72-4dba-84aa-376043ac34a4">
+      <ID>Senior Engineer</ID>
+      <Name>Senior Engineer</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="877b37f6-63e0-46d7-99c0-4808dc07aeaa">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="c79efb1d-68a5-49cf-b7e5-fe973d8ce5b8">
+            <TableID>dbo_FactDeptPosition</TableID>
+            <ColumnID>Senior_x0020_Engineer</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="1b009377-c75e-4506-9c70-8f01a5dfd798">
+      <ID>Assistant Engineer</ID>
+      <Name>Assistant Engineer</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="5b633737-c81f-446c-bb96-5b50ed38e69b">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="8aba2896-f7b3-48f3-9249-d7ff0ce03f62">
+            <TableID>dbo_FactDeptPosition</TableID>
+            <ColumnID>Assistant_x0020_Engineer</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="09e47a75-cff7-4e73-a013-dcd8cd34e58a">
+      <ID>Technique Leader</ID>
+      <Name>Technique Leader</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="9af18bd6-4635-48b6-a558-1655f86fc9fe">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="5d980903-2739-451e-bc8b-87ace0ea3f68">
+            <TableID>dbo_FactDeptPosition</TableID>
+            <ColumnID>Technique_x0020_Leader</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+  </Attributes>
+  <ddl300:ProcessingState>Unprocessed</ddl300:ProcessingState>
+</Dimension>
